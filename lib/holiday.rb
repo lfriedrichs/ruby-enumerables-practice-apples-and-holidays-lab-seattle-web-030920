@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.each {|key, values| 
-    puts `#{key.to_s.capitalize}:`
+    puts `#{key}:`
     values.each {|key, value| 
       supplies = values.join(', ')
       puts `#{key.capitalize}: #{supplies}`
